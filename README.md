@@ -100,7 +100,7 @@ login/
 
 signup/
 └── signup.jsx
-````
+```
 
 ### Authentication Flow
 
@@ -227,6 +227,229 @@ analyzing agricultural IoT data.
 
 ---
 
+## 📟 Devices
+
+The Devices module allows users to store devices, create directories,
+or create clients, allowing the creation of workplace against
+different oganization or environment and sorting.
+
+Users can then drag those clients, directories, or devices to
+the inventory system to store them for further uses.
+
+### Features
+
+* Storing of devices
+* Creation of client and directories for better sorting
+* Register devices
+* Export devices data to json
+
+### Workflow
+
+User can register devices and drag the devices to the destinated 
+location to better sort them
+
+A typical workflow when using:
+
+```text
+User Register a device
+           ↓
+User drag it to the client
+           ↓
+Create a directory and name it (e.g. North East)
+           ↓
+Drag it to the directory
+           ↓
+User can also create a sub-directory 
+and do the same thing (optional)
+```
+
+Afterward, when user want to access it, 
+they can drag it to the inventory system
+
+### Technical Highlight
+
+* Hierarchical resource management
+* Reusable React components
+* Device management interactions
+* Drag-and-drop interactions
+* API integration
+* State management
+
+### Screenshots
+
+#### Client & Device Register
+![Biomation Devices Dashboard](screenshots/devices1.png)
+
+#### Directory
+![Biomation Devices Dashboard](screenshots/devices2.png)
+The sub-directory looks similar to this
+
+#### Devices
+![Biomation Devices Dashboard](screenshots/devices3.png)
+
+#### Dragging directory to inventory
+![Biomation Devices Dashboard](screenshots/devices4.png)
+
+---
+<!-- 
+* Security
+* Logs
+-->
+
+### 📝 Logs
+
+The Security module allows users to view either
+logs from devices, or logs from user action.
+
+#### Features
+
+* Filter logs by date, status, etc
+* Devices Metadata
+* Devices & user logs
+
+#### Workflow
+
+User can view the targeted action by filtering
+
+A typical workflow is:
+
+```text
+User drag the client from inventory
+               ↓
+User filter the list of logs by entering
+      the date range, etc
+```
+
+#### Technical Highlights
+
+* Activity and event tracking
+* Structured log data
+* Log filtering and search
+* Event categorization
+* Dynamic data rendering
+* Error and status handling
+* Reusable log components
+* API integration
+
+#### Screenshots
+
+![Biomation Logs Dashboard](screenshots/logs1.png)
+
+---
+
+### 🔐 Security
+
+The Security module allows clients owner to invite user, 
+create/assign/modify role and it also contain security metric 
+of the user you invited.
+
+#### Features
+
+* Create/assign/modify role
+* User invitation
+* User metric & metadata
+* Client metadata
+
+#### Workflow
+
+Owner of the client can create role at the bottom,
+assign them to invited user with limited permission 
+to provide security.
+
+A typical workflow is:
+
+```text
+Owner drag the client from the inventory
+                  ↓
+owner can either invite user, create role,
+      modify role or assign it
+```
+
+### Technical Highlights
+
+- Layered security architecture
+- Hierarchical access management
+- Role and permission monitoring
+- User security inspection
+- 2FA status monitoring
+- Interactive security drill-down
+- Security metrics and status indicators
+- Dynamic data-driven interface
+
+### Screenshots
+
+#### User Dashboard
+![Biomation Security Dashboard](screenshots/security1.png)
+
+#### Role Dashboard & User Metadata
+![Biomation Security Dashboard](screenshots/security2.png)
+
+#### Role Modification & Creation
+![Biomation Security Dashboard](screenshots/security3.png)
+
+---
+
+## 📈 Analysis
+
+The Analysis module allows users to monitor and compare agricultural
+sensor data across different devices and time periods.
+
+Users can select specific devices, metrics, and date ranges to visualize
+changes in their agricultural environment through interactive charts.
+
+### Features
+
+* Date and time range slection
+* Device comparison
+* Data flow metric 
+* Live data
+* Sensor data visualization
+* Weather infomation 
+* Multiple analysis workspaces
+
+### Workflow
+
+A typical workflow is:
+
+```text
+Drag and drop the device/directory
+from inventory to an area
+      ↓
+Select date range
+      ↓
+Select metric (e.g. Temperature)
+      ↓
+Compare sensor data
+      ↓
+Analyze visualization
+```
+
+This allows users to identify changes in environmental conditions and
+compare measurements between different devices or time periods.
+
+### Technical Highlights
+
+- React-based dashboard architecture
+- Reusable dashboard components
+- API-based and Websocket-based data retrieval
+- Interactive data visualization
+- Client-side state management
+- Loading and error handling
+- Responsive interface
+
+### Screenshots
+
+
+![Biomation Analysis Dashboard](screenshots/analysis1.png)
+![Biomation Analysis Dashboard](screenshots/analysis2.png)
+![Biomation Analysis Dashboard](screenshots/analysis3.png)
+
+---
+
+
+
+---
+
 ## 🔒 Source Code & Privacy
 
 The complete Biomation project is not publicly available because it
@@ -255,20 +478,6 @@ backend systems, data visualization, and connected-device concepts.
 
 The project also serves as an opportunity to experiment with building
 larger-scale application architecture rather than isolated components.
-
----
-
-## 🚀 Future Development
-
-Potential future improvements include:
-
-* Real-time IoT data streaming
-* More advanced agricultural analytics
-* Improved data visualization
-* Automated alerts and notifications
-* Additional device integrations
-* More detailed security monitoring
-* Expanded agricultural insights
 
 ---
 
