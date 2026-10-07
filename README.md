@@ -1,7 +1,5 @@
 # 🌱 Biomation
-
 > **Cultivate Data, Nourish Growth.**
-
 Biomation is an agriculture IoT platform designed to help users monitor,
 analyze, and manage agricultural environments through connected devices
 and collected sensor data.
