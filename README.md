@@ -1,4 +1,3 @@
-````md
 # 🌱 Biomation
 
 > **Cultivate Data, Nourish Growth.**
